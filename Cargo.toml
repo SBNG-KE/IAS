@@ -1,0 +1,30 @@
+[package]
+name = "ias"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4"
+sysinfo = "0.30"
+rpassword = "7.0"
+tokio = { version = "1", features = ["full"] }
+winreg = "0.50"
+base64 = "0.22"
+sha2 = "0.10"
+hex = "0.4"
+rand = "0.8"
+winapi = { version = "0.3", features = ["winuser", "shellapi", "processthreadsapi", "winnt", "handleapi", "securitybaseapi", "winbase"] }
+colored = "2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+windows = { version = "0.51", features = ["Win32_Foundation", "Win32_System_Threading"] }
+pqcrypto-traits = "0.3"
+pqcrypto-kyber = "0.7"
+aes-gcm = "0.10"
+secrecy = "0.10.3"
+zeroize = "1.6"
+pbkdf2 = "0.12.2"
+hmac = "0.12.1"
+
+[build-dependencies]
+winres = "0.1.12"
